@@ -15,6 +15,11 @@ contract UniswapV2Factory is IUniswapV2Factory {
     constructor(address _feeToSetter) public {
         feeToSetter = _feeToSetter;
     }
+        
+    function getInitHash() public pure returns(bytes32){
+        bytes memory bytecode = type(UniswapV2Pair).creationCode;
+        return keccak256(abi.encodePacked(bytecode));
+    }
 
     function allPairsLength() external view returns (uint) {
         return allPairs.length;

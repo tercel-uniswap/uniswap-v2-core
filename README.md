@@ -22,3 +22,10 @@ The following assumes the use of `node@>=10`.
 ## Run Tests
 
 `yarn test`
+
+
+## BSC TEST
+```
+UniswapV2Factory 0xCdb703Cc82922d32ceC2e18cCf275C02e5Ba632a
+
+```
